@@ -1,5 +1,5 @@
 let listaNumeroGerado = [];
-let numMax = 5;
+let numMax = 10;
 let numeroSecreto = gerarNumero();
 let tentativas=0;
 let chute;
@@ -27,7 +27,7 @@ function gerarNumero(){
 
 function trocarTextoNaTela(tag, texto){
     document.querySelector(tag).innerHTML= texto;
-    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate: 1});
+    // responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate: 1});
 }
 
 function limparChute(){
@@ -68,5 +68,3 @@ function jogandoNovamente(){
     
     document.getElementById('reiniciar').setAttribute('disabled', true);
 }
-
-// onkeydown = console.log('acho que deu');
